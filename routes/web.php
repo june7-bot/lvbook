@@ -20,6 +20,8 @@ Route::resource('articles', 'ArticlesController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-// DB::listen(function($query){
-//     var_dump($query->sql);
-// });
+Route::get('/commute', 'CommuteController@index');
+Route::get('/date', 'CommuteController@date');
+Route::get('/user/mypage', 'UserController@index');
+
+

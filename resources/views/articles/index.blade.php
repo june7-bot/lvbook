@@ -7,7 +7,7 @@
         <ul>
             @forelse($articles as $article)
             <li>
-                {{ $article -> title}}
+                <a href="{{ url('/') }}">{{ $article -> title}}</a>
                 <small>
                     by {{ $article->user->name}}
                 </small>

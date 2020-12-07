@@ -60,6 +60,17 @@
 
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
+                                        <a href="{{ url('/articles/create') }}">
+                                            글쓰기
+                                        </a>
+                                        
+                                        <a href="{{ url('/user/mypage') }}">
+                                            마이페이지
+                                        </a>
+                                        <a href="{{ url('/commute') }}">
+                                            출퇴근 내역
+                                        </a>
+
                                         <a href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
